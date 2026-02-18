@@ -7,4 +7,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD ["pytest", "-v"]
+CMD ["pytest", "--html=report.html", "--self-contained-html"]
+
